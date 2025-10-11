@@ -1,0 +1,109 @@
+/* ---------- Global Styles ---------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: #111;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* Links */
+a {
+  color: #c7a008; /* gold accent */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header .logo p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #c7a008; /* gold */
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  position: relative;
+  margin-top: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-image {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+/* ---------- Sections ---------- */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section h2 {
+  color: #fff;
+  border-bottom: 2px solid #c7a008;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin-bottom: .5rem;
+}
+
+/* ---------- Calendar ---------- */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.calendar-container iframe {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
