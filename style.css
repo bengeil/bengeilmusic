@@ -46,14 +46,71 @@ header .logo p {
   color: #bbb;
 }
 
-nav a {
-  margin-left: 1.5rem;
-  font-weight: bold;
-  color: #fff;
+/* Desktop menu */
+.desktop-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+.desktop-menu a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+.desktop-menu a:hover {
+  text-decoration: underline;
 }
 
-nav a:hover {
-  color: #c7a008; /* gold */
+/* Hamburger button */
+.hamburger {
+  display: none; /* hide on desktop */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: #f5f5f5;
+  border-radius: 2px;
+}
+
+/* Hide mobile menu by default */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* hide offscreen */
+  width: 250px;
+  height: 100%;
+  background: #0b1a2e;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.mobile-menu a:hover {
+  text-decoration: underline;
+}
+.mobile-menu.open {
+  right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none; /* hide desktop menu */
+  }
+  .hamburger {
+    display: flex; /* show hamburger */
+  }
 }
 
 /* ---------- Hero Section ---------- */
