@@ -79,7 +79,7 @@ header .logo p {
 .mobile-menu {
   position: fixed;
   top: 0;
-  right: -250px; /* hide offscreen */
+  right: -350px; /* hide offscreen */
   width: 250px;
   height: 100%;
   background: #0b1a2e;
