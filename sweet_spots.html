@@ -1,267 +1,63 @@
-/* ---------- Global Styles ---------- */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  color: #fff;
-  background: #0b1a2e;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Geil | The Sweet Spots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <h1>Ben Geil</h1>
+        <p>Bassist | Composer | Performer</p>
+        </div>
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="jazz.html">Jazz</a>
+        <a href="sweet_spots.html">The Sweet Spots</a>
+        <a href="calendar.html">Calendar</a>
+        </nav>
+    </header>
 
-h1, h2, h3 {
-  margin-top: 0;
-  max-width: 950px;
-}
+    <main>
+        <section class="sweet-spots">
+            <div class="logo">
+                <img src="BandLogo.png" class="logo">
+            </div>
+            <p class="sweet-spots-paragraph">
+                I’ve always been a Soul and R&B guy at heart, and it’s been a lifelong dream of mine to start a band that showcases my love for that music. In the spring of 2024, that dream came to life when I formed The Sweet Spots with friends from the Cal Poly Jazz Program who shared the same passion and drive. I play bass and share vocal duties in the group, and together we’ve been bringing our blend of Soul, R&B, and Funk to stages across the Central Coast.
+            </p>
+            <div class="sweet-spots-gallery">
+                <div class="sweet-spots-track">
+                    <img src="LaunchGroupPhoto.JPG">
+                    <img src="FinsGroupPhoto.jpeg">
+                    <img src="MattBradyBlake.jpg">
+                    <img src="BenRyanLib.jpg">
+                    <img src="BenLibertine2.jpg">
+                    <img src="KenzieLibertine.jpg">
+                    <img src="WilliamLib.jpg">
+                    <img src="WillLaunch.JPG">
+                    <img src="RyanLG.jpeg">
+                    <img src="LaunchGroupPhoto.JPG">
+                    <img src="FinsGroupPhoto.jpeg">
+                    <img src="MattBradyBlake.jpg">
+                    <img src="BenRyanLib.jpg">
+                    <img src="BenLibertine2.jpg">
+                    <img src="KenzieLibertine.jpg">
+                    <img src="WilliamLib.jpg">
+                    <img src="WillLaunch.JPG">
+                    <img src="RyanLG.jpeg">
+                </div>
+            </div>
+            <p>
+                You can learn more about the band at <a href="https://bengeil.github.io/thesweetspotsslo/" target="_blank">thesweetspotsslo.com</a>.
+            </p>
+        </section>
+    </main>
 
-/* Links */
-a {
-  color: #c7a008; /* gold accent */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* ---------- Header ---------- */
-header {
-  background: #0b1a2e;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header .logo h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-header .logo p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #bbb;
-}
-
-nav a {
-  margin-left: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-nav a:hover {
-  color: #c7a008; /* gold */
-}
-
-/* ---------- Hero Section ---------- */
-.hero {
-  position: relative;
-  margin-top: 0px;
-  text-align: center;
-  color: #fff;
-}
-
-.hero-image {
-  width: 100%;
-  height: fit-content;
-  object-fit: cover;
-  filter: brightness(70%);
-}
-
-/* ---------- Sections ---------- */
-section {
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-section h2 {
-  max-width: 950px;
-  color: #fff;
-  border-bottom: 2px solid #c7a008;
-  display: inline-block;
-  padding-bottom: 0.3rem;
-  margin-bottom: .5rem;
-}
-
-#bio {
-  max-width: 950px;
-}
-
-#services {
-  background-color: #0b1a2e; /* match your site background */
-  color: #f5f5f5;
-  padding: 60px 10%;
-}
-
-#services h2 {
-  margin-bottom: 10px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-#services h3 {
-  font-size: 1.4rem;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  color: #f8d57e; /* optional: highlight subheadings with a subtle accent */
-}
-
-#services p {
-  max-width: 750px;        /* keeps line length readable */
-  margin-left: 2rem;       /* gives that nice “indented from title” look */
-  line-height: 1.6;
-  font-size: 1.05rem;
-}
-
-#services a,
-#services p a {
-  color: #f8d57e;
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  #services {
-    padding: 40px 8%;
-  }
-
-  #services p {
-    margin-left: 0;        /* removes indent for mobile screens */
-    max-width: 100%;
-  }
-}
-
-#contact {
-  max-width: 950px;
-}
-
-.jazz {
-  display: flex;
-}
-
-.jazz-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap; /* makes it stack on mobile */
-  margin-bottom: 80px;
-}
-
-.jazz-text{
-  max-width: 450px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.jazz-img {
-  width: 300px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-.jam-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.jam {
-  background-color: #13294b;
-  border-radius: 12px;
-  padding: 17px 22px;
-  width: 400px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.jam:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
-}
-
-.jam h3 {
-  color: #f8d57e;
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-.jam p{
-  margin-bottom: 2px;
-}
-
-.sweet-spots {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sweet-spots-paragraph {
-  max-width: 950px;
-  text-indent: 2em;
-}
-
-.logo {
-  width: 400px;
-  height: auto;
-}
-
-.sweet-spots-gallery {
-  overflow: hidden;
-  width: 105%;
-  margin: 40px 0;
-  position: relative;
-}
-
-.sweet-spots-gallery img {
-  height: 350px;
-  width: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-3912.86705px);
-  }
-}
-
-.sweet-spots-track {
-  display: flex;
-  gap: 0px;
-  animation: scroll 60s linear infinite;
-}
-
-/* ---------- Calendar ---------- */
-.calendar {
-  max-width: 950px;
-}
-.calendar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.calendar-container iframe {
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-/* ---------- Footer ---------- */
-footer {
-  background: #0b1a2e;
-  color: #bbb;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
+    <footer>
+        <p>&copy; 2025 Ben Geil Music | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
