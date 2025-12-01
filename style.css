@@ -122,14 +122,213 @@ section h2 {
   text-decoration: underline;
 }
 
+/* ---------- Mobile Responsive Styles ---------- */
 @media (max-width: 768px) {
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  header .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  header .logo p {
+    font-size: 0.85rem;
+  }
+
+  nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    max-width: 100%;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  /* Section adjustments */
+  section {
+    padding: 0 1rem;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Services section */
   #services {
-    padding: 40px 8%;
+    padding: 40px 5%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   #services p {
-    margin-left: 0;        /* removes indent for mobile screens */
+    margin-left: 0;
     max-width: 100%;
+    font-size: 1rem;
+  }
+
+  #services h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+
+  /* Jazz containers - stack vertically on mobile */
+  .jazz-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .jazz-text {
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .jazz-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  /* Jam cards - full width on mobile */
+  .jam {
+    width: 90%;
+    max-width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+  }
+
+  .jam-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Calendar iframe - responsive */
+  .calendar-container {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .calendar-container iframe {
+    width: 100% !important;
+    max-width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+  }
+
+  /* Sweet Spots logo */
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+
+  .sweet-spots-paragraph {
+    padding: 0 1rem;
+    text-indent: 1.5em;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Bio section */
+  #bio {
+    padding: 0 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #bio p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  /* Contact section */
+  #contact {
+    padding: 0 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #contact ul {
+    padding-left: 1.5rem;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1rem;
+    font-size: 0.85rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* General typography adjustments */
+  h1, h2, h3 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra small devices (phones in portrait) */
+@media (max-width: 480px) {
+  header .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 0.25rem 0;
+  }
+
+  .jazz-text {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .jam {
+    width: 60%;
+    padding: 8px 12px;
+  }
+
+  .jam h3 {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .jam p {
+    font-size: 0.8rem;
+  }
+
+  .calendar-container {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .calendar-container iframe {
+    height: 350px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  section {
+    padding: 0 0.75rem;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -143,14 +342,28 @@ section h2 {
 
 .jazz-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap; /* makes it stack on mobile */
-  margin-bottom: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 15px;
 }
 
-.jazz-text{
+/* Alternating background colors for jazz containers */
+.jazz-container:nth-child(odd) {
+  background-color: #1a3d3d; /* Dark teal */
+  width: 95%;
+}
+
+.jazz-container:nth-child(even) {
+  background-color: #2d1a3d; /* Dark blue-purple */
+  width: 95%;
+}
+
+.jazz-text {
   max-width: 450px;
   font-size: 1rem;
   line-height: 1.6;
@@ -174,7 +387,7 @@ section h2 {
   background-color: #13294b;
   border-radius: 12px;
   padding: 17px 22px;
-  width: 400px;
+  width: 350px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -249,11 +462,15 @@ section h2 {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .calendar-container iframe {
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
 }
 
 /* ---------- Footer ---------- */
